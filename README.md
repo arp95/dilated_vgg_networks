@@ -36,7 +36,7 @@ Training Accuracy = 99.17% and Validation Accuracy = 97.11% (e = 40, lr = 1e-3, 
 
 4. <b>Dilated VGG-19</b><br>
 
-Training Accuracy = 99.17% and Validation Accuracy = 97.11% (e = 40, lr = 1e-3, m = 0.9, bs = 32, wd = 5e-4)<br>
+Training Accuracy = 98.81% and Validation Accuracy = 97.18% (e = 40, lr = 1e-3, m = 0.9, bs = 32, wd = 5e-4)<br>
 
 
 ### Software Required

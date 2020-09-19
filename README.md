@@ -9,7 +9,7 @@ Arpit Aggarwal
 
 
 ### Introduction to the Project
-In this project, different CNN Architectures like VGG-16 and VGG-19 were used for the task of Dog-Cat image classification. The input to the CNN networks was a (224 x 224 x 3) image and the number of classes were 2, where '0' was for a cat and '1' was for a dog. The CNN architectures were implemented in PyTorch and the loss function was Cross Entropy Loss. The hyperparameters to be tuned were: Number of epochs(e), Learning Rate(lr), momentum(m), weight decay(wd) and batch size(bs).
+In this project, different CNN Architectures like Dilated VGG-16, Dilated VGG-19, VGG-16 and VGG-19 were used for the task of Dog-Cat image classification. The input to the CNN networks was a (224 x 224 x 3) image and the number of classes were 2, where '0' was for a cat and '1' was for a dog. The CNN architectures were implemented in PyTorch and the loss function was Cross Entropy Loss. The hyperparameters to be tuned were: Number of epochs(e), Learning Rate(lr), momentum(m), weight decay(wd) and batch size(bs).
 
 
 ### Data
@@ -19,18 +19,24 @@ The data for the task of Dog-Cat image classification can be downloaded from: ht
 ### Results
 The results after using different CNN architectures are given below:
 
+1. <b>VGG-16(pretrained on ImageNet dataset)</b><br>
 
-1. <b>ResNet-50(pre-trained on ImageNet dataset)</b><br>
+Training Accuracy = 99.27% and Validation Accuracy = 96.73% (e = 50, lr = 0.005, m = 0.9, bs = 32, wd = 0.001)<br>
 
-Training Accuracy = 99.43% and Validation Accuracy = 98.43% (e = 50, lr = 0.005, m = 0.9, bs = 32, wd = 5e-4)<br><br>
 
-1. <b>DRN-50</b><br>
+2. <b>VGG-19(pretrained on ImageNet dataset)</b><br>
 
-Training Accuracy = 96.91% and Validation Accuracy = 94.53% (e = 100, lr = 0.005, m = 0.9, bs = 32, wd = 5e-4)<br><br>
+Training Accuracy = 99.13% and Validation Accuracy = 97.25% (e = 50, lr = 0.005, m = 0.9, bs = 32, wd = 5e-4)<br>
 
-1. <b>DRN-34</b><br>
 
-Training Accuracy = 98.23% and Validation Accuracy = 96.68% (e = 100, lr = 0.005, m = 0.9, bs = 32, wd = 5e-4)<br><br>
+3. <b>Dilated VGG-16</b><br>
+
+Training Accuracy = 99.13% and Validation Accuracy = 97.25% (e = 50, lr = 0.005, m = 0.9, bs = 32, wd = 5e-4)<br>
+
+
+4. <b>Dilated VGG-19</b><br>
+
+Training Accuracy = 99.13% and Validation Accuracy = 97.25% (e = 50, lr = 0.005, m = 0.9, bs = 32, wd = 5e-4)<br>
 
 
 ### Software Required
